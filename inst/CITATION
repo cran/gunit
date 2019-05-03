@@ -1,0 +1,12 @@
+citHeader("To cite gunit in publications use:")
+
+citEntry(
+  entry    = "Manual",
+  title    = "gunit: Converts Conductance Units",
+  author   = "Christopher D. Muir",
+  year     = "2019",
+  url      = "https://github.com/cdmuir/gunit",
+  textVersion = paste(
+    "Muir CD (2019) gunit: Converts Conductance Units. R package version 1.0.0. https://github.com/cdmuir/gunit"
+  )
+)

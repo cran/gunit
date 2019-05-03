@@ -1,0 +1,16 @@
+9afd7d09c41d3fa87c08555656481575 *DESCRIPTION
+6839fdccfb3beb2736dfd6fbf49bf0ad *LICENSE
+3097374f31123ec164c4a8f588d1f27f *NAMESPACE
+049db2acb50f07141096e18e13069d79 *R/convert_conductance.R
+32f00efabd24621e3afe3f69e07541c8 *R/gunit-package.R
+8d2487dbf45064f33b08e5a80830b68e *R/utils-pipe.R
+925b2deded625f4bded36c2bd7ec590b *README.md
+f0cecff23ae224801a0aa001448ea14c *inst/CITATION
+4fd51556b07fac777b89779bac4b8ea1 *man/convert_conductance.Rd
+808a252ebada89165509c79b0990ef37 *man/figures/README-pressure-1.png
+16202659004b153fa56037b44507fe8c *man/gunit.Rd
+1f7896a1b866ff9ae89ba35be7c7b6f1 *man/pipe.Rd
+acdac241f3d4e626682bd6e1254dc55d *tests/testthat.R
+f5292027511900d869ebc1a360d525c5 *tests/testthat/test-calculations.R
+8b26540f983ce68d6b6a5c6b51c94ed1 *tests/testthat/test-lengths.R
+8ebd7fde0d45a5e7de4f190c69d248a2 *tests/testthat/test_units.R
