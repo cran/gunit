@@ -7,10 +7,8 @@
 
 [![CRAN
 status](https://www.r-pkg.org/badges/version/gunit)](https://cran.r-project.org/package=gunit)
-[![Build
-Status](https://travis-ci.com/cdmuir/gunit.svg?token=yprDUtRtPBa2Ma9G4sFP&branch=master)](https://travis-ci.com/cdmuir/gunit)
-[![Lifecycle:
-maturing](https://img.shields.io/badge/lifecycle-maturing-blue.svg)](https://www.tidyverse.org/lifecycle/#maturing)
+[![R-CMD-check](https://github.com/cdmuir/gunit/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/cdmuir/gunit/actions/workflows/R-CMD-check.yaml)
+[![](https://cranlogs.r-pkg.org/badges/gunit)](https://cran.r-project.org/package=gunit)
 <!-- badges: end -->
 
 In plant physiology, conductance to heat, carbon dioxide, and water
@@ -26,7 +24,7 @@ You can install the current version of gunit from
 [GitHub](https://github.com/cdmuir/gunit) with:
 
 ``` r
-remotes::install.packages("cdmuir/gunit")
+remotes::install_github("cdmuir/gunit")
 ```
 
 Or the released version of gunit from [CRAN](https://CRAN.R-project.org)
@@ -44,45 +42,44 @@ units:
 ``` r
 library(gunit)
 library(units)
-#> udunits system database from /Library/Frameworks/R.framework/Versions/3.6/Resources/library/units/share/udunits
 
-g_sw <- set_units(0.4, mol/m^2/s)
+g_sw = set_units(0.4, mol/m^2/s)
 convert_conductance(g_sw)
-#> # A tibble: 1 x 3
-#>         `m/s` `umol/m^2/s/Pa` `mol/m^2/s`
-#>         [m/s] [umol/m^2/Pa/s] [mol/m^2/s]
-#> 1 0.009786197        3.947709         0.4
+#> # A tibble: 1 × 3
+#>     `m/s` `umol/m^2/s/Pa` `mol/m^2/s`
+#>     [m/s] [umol/m^2/Pa/s] [mol/m^2/s]
+#> 1 0.00979            3.95         0.4
 
 # Change Temperature and Pressure
-g_sw <- set_units(0.4, mol/m^2/s)
+g_sw = set_units(0.4, mol/m^2/s)
 convert_conductance(g_sw, 
                     P = set_units(80, kPa), 
                     Temp = set_units(293, K))
-#> # A tibble: 1 x 3
-#>        `m/s` `umol/m^2/s/Pa` `mol/m^2/s`
-#>        [m/s] [umol/m^2/Pa/s] [mol/m^2/s]
-#> 1 0.01218068               5         0.4
+#> # A tibble: 1 × 3
+#>    `m/s` `umol/m^2/s/Pa` `mol/m^2/s`
+#>    [m/s] [umol/m^2/Pa/s] [mol/m^2/s]
+#> 1 0.0122               5         0.4
 
 # Calculations can also be vectorized
 
-g_sw <- set_units(seq(0.1, 0.4, 0.1), mol/m^2/s)
+g_sw = set_units(seq(0.1, 0.4, 0.1), mol/m^2/s)
 convert_conductance(g_sw)
-#> # A tibble: 4 x 3
-#>         `m/s` `umol/m^2/s/Pa` `mol/m^2/s`
-#>         [m/s] [umol/m^2/Pa/s] [mol/m^2/s]
-#> 1 0.002446549       0.9869272         0.1
-#> 2 0.004893099       1.9738543         0.2
-#> 3 0.007339648       2.9607815         0.3
-#> 4 0.009786197       3.9477087         0.4
+#> # A tibble: 4 × 3
+#>     `m/s` `umol/m^2/s/Pa` `mol/m^2/s`
+#>     [m/s] [umol/m^2/Pa/s] [mol/m^2/s]
+#> 1 0.00245           0.987         0.1
+#> 2 0.00489           1.97          0.2
+#> 3 0.00734           2.96          0.3
+#> 4 0.00979           3.95          0.4
 ```
 
 ## Contributors
 
-  - [Chris Muir](https://github.com/cdmuir)
+- [Chris Muir](https://github.com/cdmuir)
 
 ## Comments and contributions
 
-I welcome comments, criticisms, and especially contributions\! GitHub
+I welcome comments, criticisms, and especially contributions! GitHub
 issues are the preferred way to report bugs, ask questions, or request
 new features. You can submit issues here:
 
@@ -90,11 +87,11 @@ new features. You can submit issues here:
 
 ## Meta
 
-  - Please [report any issues or
-    bugs](https://github.com/cdmuir/gunit/issues).
-  - License: MIT
-  - Get citation information for `gunit` in R doing `citation(package =
-    'gunit')`
-  - Please note that the ‘gunit’ project is released with a [Contributor
-    Code of Conduct](CODE_OF_CONDUCT.md). By contributing to this
-    project, you agree to abide by its terms.
+- Please [report any issues or
+  bugs](https://github.com/cdmuir/gunit/issues).
+- License: MIT
+- Get citation information for `gunit` in R doing
+  `citation(package = 'gunit')`
+- Please note that the ‘gunit’ project is released with a Contributor
+  Code of Conduct. By contributing to this project, you agree to abide
+  by its terms.

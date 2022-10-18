@@ -8,6 +8,7 @@
 #' @docType package
 #' @name gunit
 #' @importFrom magrittr %>% %<>%
+#' @importFrom methods is
 #' @importFrom tibble tibble
 #' @importFrom units drop_units set_units
 NULL

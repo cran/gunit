@@ -3,7 +3,6 @@
 \docType{package}
 \name{gunit}
 \alias{gunit}
-\alias{gunit-package}
 \title{\code{gunit} package}
 \description{
 Convert Conductance Units

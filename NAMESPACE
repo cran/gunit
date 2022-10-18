@@ -2,8 +2,11 @@
 
 export("%>%")
 export(convert_conductance)
+export(gc2gw)
+export(gw2gc)
 importFrom(magrittr,"%<>%")
 importFrom(magrittr,"%>%")
+importFrom(methods,is)
 importFrom(tibble,tibble)
 importFrom(units,drop_units)
 importFrom(units,set_units)
